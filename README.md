@@ -40,4 +40,14 @@ Calling a function:
 ```
 add(1, 2);
 ```
+Monkey only supports ASCII characters, it has no Unicode support.
 
+## Lexer
+
+The lexer needs a few things:
+
+1. Tokens
+2. A way to create a new lexer
+3. A way to get the next token
+
+That is basically all that is needed from the lexer.
