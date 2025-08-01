@@ -40,7 +40,6 @@ Calling a function:
 ```
 add(1, 2);
 ```
-Monkey only supports ASCII characters, it has no Unicode support.
 
 ## Lexer
 
@@ -51,3 +50,13 @@ The lexer needs a few things:
 3. A way to get the next token
 
 That is basically all that is needed from the lexer.
+
+## Possible Enhancements
+
+### Unicode
+
+Unicode is not supported. To start support we would need to change characters to runes and alter how we parse characters.
+
+### Floats
+
+Monkey does not support float data types.
