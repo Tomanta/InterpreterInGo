@@ -28,4 +28,4 @@ The lexer creates:
 
 **NOTE:** A professional program would attach extra data to each token, such as the line and column number for better error messages.
 
-
+A lexer does not care if syntax is valid or not - only that it can recognize the characters correctly to tokenize them.
