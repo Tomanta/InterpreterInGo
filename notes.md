@@ -29,3 +29,21 @@ The lexer creates:
 **NOTE:** A professional program would attach extra data to each token, such as the line and column number for better error messages.
 
 A lexer does not care if syntax is valid or not - only that it can recognize the characters correctly to tokenize them.
+
+## Parser
+
+A **Parser** takes input data and builds a data structure - often some form of tree - and checks for correct syntax in the process.
+
+Generally things are parsed into an **Abstract Syntax Tree** (AST), which discards several components of the language that are only used to guide the parser. 
+
+Parser Generators do exist, which can take **context-free grammer** (CFG) which describes the language - typically in **Backus-Naur Form** or **Extended Backus-Naur Form** and creates a parser.
+
+### Strategies
+
+Two strategies exist for parsing: top-down or bottom-up. Examples of top-down parsers include "recursive descent", "early", and "predictive". Monkey uses recursive descent, or specifically a Pratt Parser.
+
+Terminology:
+
+- **Statements** do not produce a value
+- **Expressions** do produce a value
+
