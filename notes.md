@@ -46,4 +46,8 @@ Terminology:
 
 - **Statements** do not produce a value
 - **Expressions** do produce a value
-
+- **prefix operator**: is "in front of" its operand (`--5`)
+- **postfix operator**: is after is operand (`foobar++`)
+- **infix operator**: is between its operands (`5 * 8`)
+- **operator precendence**: order of operations; which operators take priority
+- 
